@@ -1,0 +1,11 @@
+<hazelcast xmlns="http://www.hazelcast.com/schema/config">
+    <cluster-name>hazelcast-demo</cluster-name>
+    <network>
+        <public-address>localhost:5701</public-address>
+        <join>
+            <multicast enabled="false"/>
+            <kubernetes enabled="false"/>
+        </join>
+    </network>
+    <management-center scripting-enabled="true" console-enabled="true" data-access-enabled="true"/>
+</hazelcast>

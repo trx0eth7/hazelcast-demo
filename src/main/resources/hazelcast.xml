@@ -1,0 +1,11 @@
+<hazelcast-client xmlns="http://www.hazelcast.com/schema/client-config">
+    <cluster-name>hazelcast-demo</cluster-name>
+    <instance-name>hazelcast-client</instance-name>
+    <network>
+        <auto-detection enabled="true"/>
+        <cluster-members>
+            <address>127.0.0.1</address>
+        </cluster-members>
+    </network>
+    <connection-strategy async-start="true" reconnect-mode="ASYNC"/>
+</hazelcast-client>

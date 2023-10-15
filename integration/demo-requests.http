@@ -1,0 +1,16 @@
+###
+GET http://localhost:8080/users/
+
+###
+GET http://localhost:8080/users/alexander2
+
+###
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+   "login": "alexander",
+   "firstName": "Alexander",
+   "lastName": "Vasilev",
+   "email": "av@ue.io"
+}
